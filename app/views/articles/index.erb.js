@@ -1,0 +1,1 @@
+$('#test_<%=article.id%>').html('<%= j render partial: "views/articles/index", locals: { articles: @articles } %>');

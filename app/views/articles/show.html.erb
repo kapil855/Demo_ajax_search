@@ -1,0 +1,17 @@
+<div class="col-md-4">
+  <div class="card mt-4 mb-4">
+    <div class="card-header">Articles</div>
+    <div class="card-body">
+      <div>
+        <p>Title: <%= @article.title %></p>
+      </div>
+      <div>
+        <p>Body: <%= @article.body %></p>
+      </div>
+    </div>
+  </div>
+  <%= render 'comments/comments' %>
+  <h2>Add a comment:</h2>
+  <%= render 'comments/form'%>
+<%= link_to "Back", articles_path, class:'btn btn-primary'%>
+</div>

@@ -1,0 +1,8 @@
+  <h2 style="text-align: center; background-color: greenyellow; color: white; padding: 20px;">User - <%= @users.count %></h2>
+<% @users.each do |user|  %>
+  <div>
+    <p>Name: <%= link_to user.name, user %></p>
+    <p>Email: <%= link_to user.email, user %></p>    
+  </div>
+  <hr>
+<% end %>

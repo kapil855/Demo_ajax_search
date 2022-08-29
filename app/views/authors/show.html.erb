@@ -1,0 +1,7 @@
+<h1>Authors#show</h1>
+
+<b>Author Name</b>: <%= @auth.name%><br>
+<b>Book Name</b><br>
+<% @auth.books.each do |book| %>
+<li><%= book.name %></li>
+<% end %>

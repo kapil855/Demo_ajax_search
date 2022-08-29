@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BookAuthorApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- <script src="jquery-3.6.0.min.js"></script> -->
+  </head>
+
+  <body>
+    <div class="container">
+      <%= render 'layouts/navbar'%>
+      <div class="row">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>

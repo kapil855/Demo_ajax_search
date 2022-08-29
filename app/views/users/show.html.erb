@@ -1,0 +1,27 @@
+<div class="mt-4">
+  <div class="badge badge-primary">
+    Name: <%= @user.name %>
+  </div>
+  <div class="badge badge-primary">
+    email: <%= @user.email %>
+  </div>
+  <div>
+    <%= link_to 'Add user', new_user_path, class: 'btn btn-primary'%>
+  </div>
+  <h2>User Tasks</h2>
+    <% @user.tasks.each do |task|%>
+      <% if task.present? %>
+        <div class="task-bg">
+          <ul>
+            <li><%= task.name %></li>
+          </ul>
+        </div>
+        <hr>
+      <% end %>
+    <% end %>
+    <%#= link_to "Delete", tasks_%>
+  <div>
+    <%= link_to "Back", users_path, class: 'btn btn-primary' %>
+  </div>  
+</div>
+
